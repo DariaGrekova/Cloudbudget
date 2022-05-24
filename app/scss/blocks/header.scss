@@ -1,0 +1,56 @@
+.header {
+    @include flex;
+    padding: 60px 0 140px;
+    * {
+        color: $light;
+    }
+    &_button {
+        background: none;
+        border: 1px solid $light;
+    }
+
+    &__menu {
+    }
+}
+.logo {
+    @include flex;
+
+    &__icon {
+        margin-right: 7px;
+        width: 30px;
+        height: 30px;
+        fill: $light;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+}
+.navigation {
+    @include flex;
+    
+    &__link {
+        margin: 0 10px;
+        font-size: 14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        &:first-child {
+            font-weight: 700;
+        }
+        :visited {
+            color: $light;
+        }
+    }
+}
+.button {
+    padding: 12px 28px;
+    border-radius: 6px;
+
+    &__link {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}

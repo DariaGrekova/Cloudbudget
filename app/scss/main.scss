@@ -3,6 +3,11 @@
 @import 'fonts'; //подключаем шрифты (локально)
 
 //подключаем БЭМ блоки
+@import 'blocks/banner';
 @import 'blocks/header';
 @import 'blocks/footer';
 
+.container {
+    margin: 0 auto;
+    max-width: 1110px;
+}
