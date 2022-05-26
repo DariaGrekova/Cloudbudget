@@ -7,6 +7,7 @@
   }
 
   &_button {
+    padding: 12px 28px;
     background: none;
     border: 1px solid $light;
   }
@@ -32,10 +33,12 @@
   }
 }
 
-.navigation {
-  @include flex;
+.header-menu {
+  &__list {
+    @include flex;
+  }
 
-  &__link {
+  &__item {
     margin: 0 10px;
     font-size: 14px;
     line-height: 1.2;
@@ -52,11 +55,79 @@
 }
 
 .button {
-  padding: 12px 28px;
   border-radius: 6px;
+  text-transform: uppercase;
 
   &__link {
     font-size: 14px;
     line-height: 1.2;
   }
+}
+
+// kebab-menu
+
+.kebab-menu {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%);
+
+
+  & span {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+
+
+    &:nth-child(1) {
+      top: 0px;
+      left: 35%;
+      transition: .6s;
+    }
+
+    &:nth-child(2) {
+      top: 0px;
+      left: 35%;
+      transition: .6s;
+    }
+
+    &:nth-child(3) {
+      top: 88px;
+      left: 35%;
+      transition: .6s;
+    }
+
+    &:nth-child(4) {
+      top: 175px;
+      left: 35%;
+      transition: .6s;
+    }
+
+    &:nth-child(5) {
+      top: 175px;
+      left: 35%;
+      transition: .6s;
+    }
+  }
+
+  &:hover span:nth-child(1) {
+    transform: translate(70px, 15px);
+  }
+
+  &:hover span:nth-child(2) {
+    transform: translate(-70px, 15px);
+  }
+
+  &:hover span:nth-child(4) {
+    transform: translate(-70px, -15px);
+  }
+
+  &:hover span:nth-child(5) {
+    transform: translate(70px, -15px);
+  }
+
 }

@@ -1,2 +1,4 @@
-import {testFunction} from './scripts/test';
-testFunction();
+import {
+  burgerMenu
+} from './scripts/test';
+burgerMenu();
