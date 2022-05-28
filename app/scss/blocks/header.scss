@@ -2,7 +2,6 @@
   @include flex;
   padding: 60px 0 140px;
 
-
   * {
     color: $light;
   }
@@ -13,7 +12,8 @@
     border: 1px solid $light;
   }
 
-  &__menu {}
+  &__menu {
+  }
 }
 
 .logo {
@@ -35,7 +35,6 @@
 }
 
 .header-menu {
-
   &__list {
     @include flex;
   }
@@ -66,10 +65,8 @@
   }
 }
 
-
 // MEDIA QUERIES
-@media only screen and (max-width : 1280px) {
-
+@media only screen and (max-width: 1280px) {
   // kebab-menu
   .kebab-menu {
     z-index: 20;
@@ -87,35 +84,34 @@
       background: #fff;
       position: absolute;
 
-
       &:nth-child(1) {
         top: 0px;
         left: 35%;
-        transition: .6s;
+        transition: 0.6s;
       }
 
       &:nth-child(2) {
         top: 0px;
         left: 35%;
-        transition: .6s;
+        transition: 0.6s;
       }
 
       &:nth-child(3) {
         top: 15px;
         left: 35%;
-        transition: .6s;
+        transition: 0.6s;
       }
 
       &:nth-child(4) {
         top: 30px;
         left: 35%;
-        transition: .6s;
+        transition: 0.6s;
       }
 
       &:nth-child(5) {
         top: 30px;
         left: 35%;
-        transition: .6s;
+        transition: 0.6s;
       }
     }
 
@@ -136,9 +132,7 @@
         &:nth-child(5) {
           transform: translate(10px, -5px);
         }
-
       }
-
     }
   }
 
@@ -159,5 +153,11 @@
     &.active {
       transform: translateX(0);
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .kebab-menu {
+    right: 160px;
   }
 }

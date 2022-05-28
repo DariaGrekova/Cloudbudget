@@ -1,14 +1,13 @@
-@import 'variables'; //пишем переменные
-@import 'reset'; //сборс стилей
-@import 'fonts'; //подключаем шрифты (локально)
+@import "variables"; //пишем переменные
+@import "reset"; //сборс стилей
+@import "fonts"; //подключаем шрифты (локально)
 
 //подключаем БЭМ блоки
-@import 'blocks/banner';
-@import 'blocks/header';
-@import 'blocks/hello-page';
+@import "blocks/banner";
+@import "blocks/header";
+@import "blocks/hello-page";
 
-@import 'blocks/footer';
-
+@import "blocks/footer";
 
 .wrapper {
   margin: 0 auto;
@@ -18,4 +17,11 @@
 .container {
   padding: 0 165px;
   width: 100%;
+}
+
+// MEDIA QUERIES
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
 }
