@@ -1,0 +1,24 @@
+.app-download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 90px 0;
+  &__content {
+    color: $light;
+  }
+}
+
+.links-block {
+  &__item {
+  }
+}
+
+//content style in file main.scss
+
+//MEDIA QUERIES
+@media only screen and (max-width: 1240px) {
+  .app-download {
+    justify-content: center;
+  }
+}

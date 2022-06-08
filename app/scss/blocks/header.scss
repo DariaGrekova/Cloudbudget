@@ -61,6 +61,7 @@
 .button {
   border-radius: 6px;
   text-transform: uppercase;
+  cursor: pointer;
 
   &__link {
     font-size: 14px;
@@ -75,16 +76,16 @@
     position: sticky;
     margin: 0 auto;
     z-index: 100;
-    width: 30px;
-    height: 30px;
-    border-top: 4px solid $light;
-    border-right: 4px solid $light;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid $light;
+    border-right: 2px solid $light;
     transform: rotate(135deg);
     transition: transform 0.5s;
 
     &:hover {
-      border-top: 4px solid $dark;
-      border-right: 4px solid $dark;
+      border-top: 2px solid $dark;
+      border-right: 2px solid $dark;
       transition: ease-in-out 0.5s;
     }
 
@@ -93,12 +94,17 @@
       margin: 0 auto;
       z-index: 100;
 
-      width: 30px;
-      height: 30px;
-      border-top: 4px solid $pink;
-      border-right: 4px solid $pink;
+      width: 20px;
+      height: 20px;
+      border-top: 2px solid $pink;
+      border-right: 2px solid $pink;
       transform: rotate(-45deg);
       transition: transform 0.5s;
+      &:hover {
+        border-top: 2px solid $light;
+        border-right: 2px solid $light;
+        transition: ease-in-out 0.5s;
+      }
     }
   }
 
@@ -118,6 +124,7 @@
     z-index: 10;
 
     &.active {
+      padding: 30% 20%;
       transform: translateX(0);
     }
   }
