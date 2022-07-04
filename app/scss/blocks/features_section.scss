@@ -80,7 +80,8 @@
   }
 
   .card {
-    width: 200px;
+    margin: 0 0 230px;
+    flex-basis: 100%;
 
     &__image {
       img {
