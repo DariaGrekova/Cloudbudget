@@ -1,0 +1,76 @@
+<section class="contact">
+  <div class="contact__content">
+    <h2 class="contact__title">Contact</h2>
+    <p class="contact__text">
+      Questions or concerns? Just fill out the form below and our support team
+      will get back to you within 24 hours
+    </p>
+  </div>
+  <div class="contact__form">
+    <form action="#" method="post" class="form">
+      <div>
+        <label for="firstName"></label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="First Name"
+          value=""
+          required
+          pattern="^[a-zA-ZА-Яа-яЁё\s]+$"
+          aria-required="true"
+          aria-describedby="name-format"
+        />
+      </div>
+
+      <div>
+        <label for="lastName"></label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Last Name"
+          value=""
+          required
+          pattern="^[a-zA-ZА-Яа-яЁё\s]+$"
+          aria-required="true"
+          aria-describedby="name-format"
+        />
+      </div>
+
+      <div>
+        <label for="tel"></label>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          placeholder="Phone Number"
+          value=""
+          required
+          pattern="[0-9]{10,12}"
+          title="79993332211"
+          aria-required="true"
+          aria-describedby="tel-format"
+        />
+      </div>
+
+      <div>
+        <label for="question"></label>
+        <input
+          type="text"
+          id="question"
+          name="question"
+          placeholder="Your Question"
+          value=""
+          required
+          pattern="^[A-Za-z.\s_-?]+$"
+          maxlength="200"
+          aria-required="true"
+          aria-describedby="question-format"
+        />
+      </div>
+
+      <div class="submit"><input type="submit" value="Submit now" /></div>
+    </form>
+  </div>
+</section>
