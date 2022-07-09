@@ -34,7 +34,7 @@
 .content {
   flex: 1 0 445px;
   max-width: 445px;
-  margin-right: 20px;
+  padding: 0 40px;
 
   &__title {
     margin-bottom: 40px;
@@ -101,6 +101,7 @@ input {
   }
   .image {
     margin-right: 0;
+    padding: 0 40px;
   }
 }
 
