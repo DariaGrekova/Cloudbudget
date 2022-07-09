@@ -65,6 +65,12 @@
     width: 30px;
     height: 30px;
     fill: $light;
+    transition: 0.4s;
+
+    &:hover {
+      fill: #e7eeff;
+      filter: drop-shadow(4px 4px 4px $form);
+    }
   }
 }
 
@@ -118,5 +124,9 @@ input {
   .image {
     flex-shrink: 1;
     height: 200px;
+  }
+
+  input::placeholder {
+    padding-left: 20px;
   }
 }

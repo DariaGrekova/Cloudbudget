@@ -21,10 +21,21 @@
   &__button {
     padding: 15px 50px;
     border: none;
-    background-color: $light;
+    // background-color: $light;
+    background-color: transparent;
+    box-shadow: 0 0 40px 40px #fff inset, 0 0 0 0 #fff;
+    transition: all 150ms ease-in-out;
 
     .button__link {
       color: $pink;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 0 #fff inset, 0 0 0 1px #fff;
+      & > .button__link {
+        color: #fff;
+      }
     }
   }
 }

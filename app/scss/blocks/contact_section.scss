@@ -51,9 +51,17 @@
     height: 50px;
     input {
       padding: 15px 35px;
-      background-color: $pink;
+      background-color: transparent;
+      box-shadow: 0 0 40px 40px $pink inset, 0 0 0 0 $pink;
+      transition: all 150ms ease-in-out;
       color: $light;
       border: none;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 0 0 $pink inset, 0 0 0 1px $pink;
+        color: $pink;
+      }
     }
   }
 }

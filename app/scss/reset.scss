@@ -18,3 +18,24 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+input[type="text"] {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.button {
+  height: 50px;
+  width: 160px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &__link {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
