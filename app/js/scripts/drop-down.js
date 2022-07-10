@@ -22,6 +22,4 @@ export function dropDown () {
   }else{
     body.classList.add('mouse');
   }
-
-
 }

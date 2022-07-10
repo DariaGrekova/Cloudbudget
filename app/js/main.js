@@ -1,8 +1,8 @@
 import {
   mobileMenu
-} from './scripts/menu.js';
+} from './scripts/menu';
 mobileMenu();
 import {
   dropDown
-} from './scripts/drop-down.js';
+} from './scripts/drop-down';
 dropDown();
