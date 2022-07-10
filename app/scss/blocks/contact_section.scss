@@ -49,12 +49,12 @@
 
   &__submit {
     height: 50px;
-    input {
+    button {
       padding: 15px 35px;
+      color: $light;
       background-color: transparent;
       box-shadow: 0 0 40px 40px $pink inset, 0 0 0 0 $pink;
       transition: all 150ms ease-in-out;
-      color: $light;
       border: none;
 
       &:hover,
@@ -93,7 +93,7 @@
 
 @media only screen and (max-width: 414px) {
   .contact {
-    padding: 50px 0;
+    padding: 65px 0;
 
     &__content {
       margin-bottom: 30px;

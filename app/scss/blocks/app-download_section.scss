@@ -1,7 +1,5 @@
 .app-download {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex;
   flex-wrap: wrap;
   margin: 0 -40px;
   padding: 90px 0;

@@ -11,8 +11,7 @@
   }
 
   &__cards {
-    display: flex;
-    justify-content: space-between;
+    @include flex;
     flex-wrap: wrap;
   }
 }
@@ -76,7 +75,7 @@
 
 @media only screen and (max-width: 414px) {
   .features__title {
-    padding: 20px;
+    padding: 65px 20px;
   }
 
   .card {

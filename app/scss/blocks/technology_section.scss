@@ -12,8 +12,7 @@
   }
 
   &__blocks {
-    display: flex;
-    justify-content: space-between;
+    @include flex;
     flex-wrap: wrap;
     margin-bottom: 104px;
   }
@@ -70,6 +69,6 @@
 
 @media only screen and (max-width: 414px) {
   .technology__title {
-    padding: 20px;
+    padding: 65px 20px;
   }
 }

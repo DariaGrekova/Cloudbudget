@@ -24,6 +24,7 @@
 }
 .sub-menu {
   margin-top: 30px;
+
   &__item {
     font-weight: 400;
     font-size: 12px;
@@ -35,6 +36,12 @@
     width: 14px;
     height: 14px;
     margin: 20px 12px 0 0;
+    transition: 00.4s;
+
+    &:hover,
+    &:focus {
+      fill: $pink;
+    }
   }
 
   &__img {
@@ -42,12 +49,7 @@
     height: auto;
   }
 }
-.fb {
-}
-.in {
-}
-.tt {
-}
+
 .copyright {
   margin: 60px 0 20px 0;
   font-size: 12px;
