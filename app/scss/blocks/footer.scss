@@ -30,6 +30,10 @@
     font-size: 12px;
     line-height: 19px;
     text-transform: capitalize;
+
+    a {
+      color: $dark;
+    }
   }
 
   &__icon {
