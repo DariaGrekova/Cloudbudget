@@ -91,6 +91,14 @@ input {
   }
 }
 
+.link {
+  color: $dark;
+
+  &:visited {
+    color: $dark;
+  }
+}
+
 // MEDIA QUERIES
 @media only screen and (max-width: 1240px) {
   .content {

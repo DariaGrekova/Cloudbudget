@@ -26,6 +26,10 @@
     &.open::before {
       transform: rotate(180deg);
     }
+
+    &:hover > .sub-menu {
+      display: block;
+    }
   }
 
   .copyright {
