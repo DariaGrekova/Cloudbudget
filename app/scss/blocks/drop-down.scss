@@ -26,9 +26,13 @@
     &.open::before {
       transform: rotate(180deg);
     }
+  }
 
-    &:hover > .sub-menu {
-      display: block;
+  .mouse {
+    .footer-menu__item {
+      &:hover > .sub-menu {
+        display: block;
+      }
     }
   }
 
